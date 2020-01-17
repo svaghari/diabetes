@@ -1,21 +1,16 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import SideBar from './components/sidebar/SideBar';
-import Content from './components/content/Content';
-import { BrowserRouter as Router } from "react-router-dom";
+import LandingPage from './modules/LandingPage.js';
+import CoursePage from './CoursePage.js';
+import { BrowserRouter as Router , Route} from "react-router-dom";
 
 export default () => {
 
-  const [isOpen, setOpen] = useState(true)
-  const toggle = () => setOpen(!isOpen)
-
   return (
     <Router>
-      <div className="App wrapper">
-        <SideBar toggle={toggle} isOpen={isOpen}/>
-        <Content toggle={toggle} isOpen={isOpen}/>
-      </div>
+          <Route exact path='/' component={LandingPage} />
+          <Route exact path="/coursePage" component={CoursePage} />
     </Router>
   );
 }

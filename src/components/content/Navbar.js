@@ -18,16 +18,16 @@ export default props => {
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ml-auto" navbar>
           <NavItem>
-            <NavLink tag={Link} to={'/page-1'}>page 1</NavLink>
+            <NavLink tag={Link} to={'/page-1'}>Section 1</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} to={'/page-2'}>page 2</NavLink>
+            <NavLink tag={Link} to={'/page-2'}>Section 2</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} to={'/page-3'}>page 3</NavLink>
+            <NavLink tag={Link} to={'/page-3'}>Section 3</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} to={'/page-4'}>page 4</NavLink>
+            <NavLink tag={Link} to={'/page-4'}>Section 4</NavLink>
           </NavItem>
       </Nav>
       </Collapse>
